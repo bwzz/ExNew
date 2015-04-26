@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/drawee"
+        fresco:placeholderImage="@mipmap/ic_launcher"
+        fresco:fadeDuration="2000"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:backgroundImage="@drawable/dayu"
+        fresco:failureImage="@drawable/dayu"
+        fresco:placeholderImageScaleType="fitXY"
+        fresco:roundedCornerRadius="80dp"
+        fresco:roundBottomLeft="false"
+        fresco:roundTopRight="false"
+        fresco:retryImage="@drawable/muyang"
+        fresco:roundWithOverlayColor="#333333"
+        fresco:roundingBorderColor="#33CC5B"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

@@ -33,6 +33,7 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         init();
+        launch(FacebookFresco.class, null);
     }
 
     @Override
@@ -155,7 +156,7 @@ public class MainActivity extends BaseActivity {
                     public void onClick(View v) {
                         Class<? extends Fragment> clazz = (Class<? extends Fragment>) classes
                                 .get(position);
-                        launch(FacebookFresco.class, null);
+                        launch(clazz, null);
                     }
                 });
             }
